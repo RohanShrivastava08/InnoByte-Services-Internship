@@ -1,0 +1,120 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #8EC5FC, #E0C3FC);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Form Container Styling */
+.form-container {
+  width: 350px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Heading Styling */
+h2 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #17aa5b;
+  box-shadow: 0 0 5px rgba(23, 170, 91, 0.3);
+}
+
+/* Button Styling */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #17aa5b;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #e4d236;
+  transform: translateY(-2px);
+}
+
+/* Link Styling */
+p {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+a.link {
+  color: #e48e5c;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a.link:hover {
+  color: #6ba7e0;
+  text-shadow: 0 0 5px rgba(107, 167, 224, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+}

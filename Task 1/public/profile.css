@@ -1,0 +1,174 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #8EC5FC, #E0C3FC);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Container Styling */
+.container {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Profile Container Styling */
+.profile-container {
+  padding: 40px;
+}
+
+/* Heading Styling */
+h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 2px solid #17aa5b;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #17aa5b;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 22px;
+  color: #333;
+  margin: 25px 0 15px;
+  border-left: 4px solid #17aa5b;
+  padding-left: 10px;
+}
+
+/* Profile Card Styling */
+.profile-card {
+  text-align: left;
+}
+
+/* Profile Header Styling */
+.profile-header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.profile-header p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Profile Body Styling */
+.profile-body p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #17aa5b;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Ratings Styling */
+.rating {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.star {
+  font-size: 24px;
+  color: #ffcc00;
+  margin: 0 2px;
+}
+
+/* Skills Styling */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skill-tag {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+/* Contact Styling */
+.contact {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  table {
+    font-size: 14px;
+  }
+  
+  .skill-tag {
+    font-size: 12px;
+  }
+}

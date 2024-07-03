@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-container">
+            <h1>USER PROFILE</h1>
+            <div class="profile-card">
+                <div class="profile-header">
+                    <h2>User: <%= user.username %></h2>
+                    <p>Email: <%= user.email %></p>
+                </div>
+                <div class="profile-body">
+                    <h3>About</h3>
+                    <p>Welcome to the user profile page of <b><%= user.username %></b>. This section can be expanded with more details like user bio, interests, or any other relevant information.</p>
+                    
+                    <h3>Work Experience</h3>
+                    <table>
+                        <tr>
+                            <th>Company</th>
+                            <th>Position</th>
+                            <th>Duration</th>
+                        </tr>
+                        <tr>
+                            <td>Company A</td>
+                            <td>Web Developer</td>
+                            <td>2018-2020</td>
+                        </tr>
+                        <tr>
+                            <td>Company B</td>
+                            <td>Senior Developer</td>
+                            <td>2020-Present</td>
+                        </tr>
+                    </table>
+                    
+                    <h3>Hobbies</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatem quaerat ullam vel laborum sapiente magni natus quasi, animi accusantium deleniti cum est beatae, numquam alias vitae explicabo officia quisquam repudiandae optio mollitia voluptates.</p>
+                    
+                    <h3>Interests</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    
+                    <h3>Skills</h3>
+                    <div class="skills">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Agile methodologies</span>
+                    </div>
+                    
+                    <h3>Ratings</h3>
+                    <div class="rating">
+                        <p><b>Overall Rating:</b></p>
+                        <div class="stars">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact">
+                        <h3>Contact</h3>
+                        <p>Feel free to reach out to <b><%= user.username %></b> via email at <%= user.email %> for any inquiries or collaborations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
